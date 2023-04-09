@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.container {
+    width: 700px;
+    justify-content: space-between;
+    border: 1px solid black;
+    display: flex;
+}
+
+.mid {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/mid.png);
+    width: 10px;
+
+}
+
+.mid .bulat {
+
+    border-radius: 100%;
+    background-color: rgb(18, 124, 218);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid .bulat .core {
+    border-radius: 100%;
+    background-color: rgb(237, 241, 245);
+    width: 20px;
+    height: 20px;
+}
+
+.left .box {
+    margin: 25px;
+    background-color: rgb(16, 127, 224);
+    width: 230px;
+    height: 230px;
+    padding: 20px;
+
+}
+
+
+
+.right {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.right .box {
+    margin: 25px;
+    background-color: rgb(16, 127, 224);
+    width: 230px;
+    height: 230px;
+    padding: 20px;
+
+}
+
+.box:hover~.mid .bulat:hover .core {
+    background-color: yellow;
+    width: 100000px;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <p>2</p>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="box">
+                <p>2</p>
+            </div>
+            
+        </div>
+
+        <div class="mid">
+            <br><br><br><br><br><br><br>
+            <div class="bulat">
+                <div class="core"></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="bulat">
+                <div class="core"></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>br
+            <div class="bulat">
+                <div class="core"></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+            <div class="bulat">
+                <div class="core"></div>
+            </div>
+        </div>
+        
+        <div class="right">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="box">
+                <p>2</p>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="box">
+                <p>2</p>
+            </div>
+
+    </div>
+   </div>
+
+    
+    
+</body>
+
+</html>
