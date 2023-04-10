@@ -11,19 +11,22 @@ a {
 }
 
 body {
+    background-color: whitesmoke;
     letter-spacing: 0.3px;
     box-sizing: border-box;
 }
 
-.container-bg{
+.container-bg {
+    margin-top: 150px;
     background-color: #74aa22;
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
 .container {
-    
+
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,10 +39,10 @@ header {
     width: 100vw;
     position: fixed;
     z-index: 10;
-    background-color: white;
+
     height: 120px;
     transition: all 0.3s;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid transparent;
 
 }
 
@@ -48,6 +51,7 @@ header.sticky {
     height: 70px;
     transition: all 0.3s;
     border-bottom: 3px solid #c8f088;
+    background-color: white;
 }
 
 .container-head {
@@ -103,7 +107,17 @@ nav ul li a:hover::after {
 
 }
 
+.description-box {
+    
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.description-box h2 {
+    margin-bottom: 10px;
+}
 
 .description {
 
@@ -129,11 +143,12 @@ nav ul li a:hover::after {
     font-weight: 600;
 }
 
-  
+
 
 
 .description a,
-.description-right a, .row-flex a {
+.description-right a,
+.row-flex a {
     --bg: #7BAB2F;
     --hover-bg: white;
     --hover-text: #7BAB2F;
@@ -144,6 +159,7 @@ nav ul li a:hover::after {
     background: var(--bg);
     transition: 0.2s;
     width: 100px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +168,8 @@ nav ul li a:hover::after {
 }
 
 .description a:hover,
-.description-right a:hover ,.row-flex a:hover{
+.description-right a:hover,
+.row-flex a:hover {
     color: var(--hover-text);
     transform: translate(-0.25rem, -0.25rem);
     background: var(--hover-bg);
@@ -199,10 +216,10 @@ nav ul li a:hover::after {
     border: 1px solid #c8f088;
     display: flex;
     border-radius: 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     width: 250px;
-    height: 300px;
+    height: 350px;
     padding: 30px;
     align-items: center;
     transition: all 0.3s;
@@ -232,6 +249,7 @@ nav ul li a:hover::after {
     margin: 50px 0;
 
 }
+
 .row {
 
     justify-content: space-between;
@@ -268,6 +286,7 @@ nav ul li a:hover::after {
 }
 
 .box img {
+    height: 80px;
     transition: all 0.3s;
 }
 
@@ -331,23 +350,26 @@ nav ul li a:hover::after {
     background-color: aqua;
 }
 
-.blog{
+.blog {
     font-weight: 600;
     color: white;
     padding: 50px 0;
     width: 1200px;
-    
+
 }
-.blog p{
-    
+
+.blog p {
+
     width: 900px;
 }
-.blog .head{
+
+.blog .head {
     display: flex;
     justify-content: center;
-    align-items:center ;flex-direction: column;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    
+
     height: 150px;
     justify-content: space-between;
 }
@@ -363,27 +385,29 @@ nav ul li a:hover::after {
     width: 500px;
 }
 
-.related-blog .description{
+.related-blog .description {
 
     width: 400px;
     height: 250px;
 }
 
-.blogs{
+.blogs {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    
-    
+
+
 }
-.blogs .card img{
+
+.blogs .card img {
     width: 340px;
     height: 200px;
     padding: 10px 0;
 }
 
-.blogs .card{
+.blogs .card {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -397,7 +421,7 @@ nav ul li a:hover::after {
     transition: all 0.3s;
 }
 
-.blogs .card:hover{
+.blogs .card:hover {
     transform: scale(1.01);
     border: 2px solid #c8f088;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -413,14 +437,204 @@ nav ul li a:hover::after {
     padding: 20px;border-radius: 50px;
 } */
 
-#deskripsi{
+#deskripsi {
     background-color: white;
     color: #74aa22;
     border: 1px solid
 }
 
-#deskripsi:hover{
+#deskripsi:hover {
     color: white;
     background-color: #74aa22;
     border: 1px solid white;
+}
+
+.contact-container {
+    border-radius: 10px;
+    border: 1px solid #08080813;
+    background-color: white;
+    display: flex;
+    width: 1000px;
+}
+
+iframe {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+form {
+    letter-spacing: 0.5px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input {
+    width: 400px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+input:first-child {
+    margin-top: 10px;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    border-color: #7BAB2F;
+}
+
+.check {
+
+    width: 400px;
+    padding: 20px;
+}
+
+label {
+    display: flex;
+    text-align: start;
+    font-size: 10pt;
+    padding: 0 40px;
+    width: 400px;
+
+
+}
+
+#status {
+    position: relative;
+    bottom: 25px;
+    left: 55px;
+
+
+}
+
+button {
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: white;
+    background-color: #74aa22;
+    border: none;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#warning {
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(248, 106, 106);
+}
+
+footer {
+    border-top: 3px solid #c8f088;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer {
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+
+    width: 350px;
+    display: flex;
+    height: 70px;
+    font-size: 12pt;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    letter-spacing: 0.5px;
+    color: #080808 ;
+    transition: all 0.3s;
+}
+
+
+.navbar a:hover{
+    color: #7BAB2F;
+    transform: scale(1.1)
+}
+
+
+.media {
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.media a {
+    font-size: 15pt;
+    color: rgba(0, 0, 0, 0.39);
+    transition: all 0.3s;
+}
+
+#footer-img {
+    position: relative;
+    top: 56px;
+    right: 39px;
+    height: 350px;
+}
+
+.skilvul {
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.568);
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.skilvul a{
+    transition: all 0.3s;
+}
+.skilvul a:hover{
+    transform: scale(1.2);
+}
+
+.copyrights{
+    background-color: white;
+    display: flex;
+justify-content: center;
+padding: 20px;
+letter-spacing: 0.5px;
+font-weight: 500;
+color: #5c5959;
+font-size: 10pt;
+
+}
+.media a:hover{
+    color: #7BAB2F;
+    transform: scale(1.2);
+
 }

@@ -1,3 +1,16 @@
+const header = document.querySelector("header");
+
+function handleScroll() {
+  if (window.scrollY > 0) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
+
+
 // Jawaban untuk nomor 6
 function handleGetFormData() {
     const name = document.getElementById('name').value;
@@ -15,18 +28,18 @@ function handleGetFormData() {
     };
 }
 
-// Jawaban untuk nomor 7
+//  7
 function isNumber(str) {
     return !isNaN(str);
 }
 
-// Jawaban untuk nomor 8
+//  8
 function checkboxIsChecked() {
     const status = document.getElementById('status');
     return status.checked;
 }
 
-// Jawaban untuk nomor 9
+// 9
 function validateFormData(data) {
     if (!data) {
         return false;
@@ -43,20 +56,19 @@ function validateFormData(data) {
     return true;
 }
 
-// Jawaban untuk nomor 10
-function submit(event) {
-    event.preventDefault();
+//  10
 
+function submit() {
+    event.preventDefault()
     const data = handleGetFormData();
     const isValid = validateFormData(data);
-
     const warning = document.getElementById('warning');
 
     if (!isValid) {
         warning.textContent = 'Periksa form anda sekali lagi';
     } else {
         warning.textContent = '';
-        // Lakukan proses submit form disini
+        
     }
 }
 

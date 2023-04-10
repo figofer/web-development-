@@ -3,16 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <script>
-        window.addEventListener("scroll", function () {
-            header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0)
-        })
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/7d90d49287.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,21 +20,22 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <br>
     <div class="container" id="asset">
-        <div class="banner"> 
+        <div class="banner">
             <div class="description">
                 <h1>Save Environment
                     Save our Planet Earth.</h1>
-                <p>The natural environment is important to human health, it was foremost. Nature is very importance</p>
+                <p id="description">The natural environment is important to human health, it was foremost. Nature is
+                    very importance</p>
                 <a href="">Take Action</a>
             </div>
-            <img src="/gambar/banner.png" alt="">
+            <img src="https://www.pngall.com/wp-content/uploads/2017/05/Save-Earth-PNG-Picture.png" alt="">
         </div>
     </div>
 
@@ -47,28 +44,35 @@
         <section class="container-box">
 
             <div class="box">
-                <img src="/gambar/group-1.png" alt="" height="50px" width="50px">
-                <h2>Fastest reycle</h2>
-                <p>Kami melakukan pembuangan sampah dengan tepat waktu, sehingga anda tidak akan mengalami permasalahan
-                    dengan sampah</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1178/1178404.png" alt="" height="50px">
+                <div class="description-box">
+                    <h2>Trash Scanner</h2>
+                <p> Dengan scaning anda akan mendapatkan
+                    informasi apakah bahan tersebut dapat didaur ulang atau tidak.</p>
+                </div>
             </div>
             <div class="box">
-                <img src="/gambar/group-1.png" alt="" height="50px" width="50px">
-                <h2>Fastest reycle</h2>
-                <p>Kami melakukan pembuangan sampah dengan tepat waktu, sehingga anda tidak akan mengalami permasalahan
-                    dengan sampah</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/1792/1792931.png" alt="" height="50px">
+                <div class="description-box">
+                    <h2>Reminder</h2>
+                    
+                    <p>Memberikan pengingat kepada pengguna tentang jadwal pengumpulan sampah dan daur ulang di wilayah
+                        mereka.</p>
+                </div>
             </div>
             <div class="box">
-                <img src="/gambar/group-1.png" alt="" height="50px" width="50px">
-                <h2>Fastest reycle</h2>
-                <p>Kami melakukan pembuangan sampah dengan tepat waktu, sehingga anda tidak akan mengalami permasalahan
-                    dengan sampah</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/4221/4221129.png" alt="" height="50px">
+                <div class="description-box">
+                    <h2>Social Reward</h2>
+                <p>pengguna daur ulang aktif akan mendapatkan dan <b>Reward</b> dari gorecyle.</p>
+                </div>
             </div>
         </section>
     </div>
     <div class="container">
         <div class="row">
-            <img src="/gambar/3d_ai.jpg" alt="" id="img">
+            <img src="https://o.remove.bg/downloads/3b8db20a-7ade-4992-9d58-4c1c724c3d26/3d_ai-removebg-preview.png"
+                alt="" id="img">
             <div class="description-right">
                 <h1>Our Story</h1>
                 <p>Penumpukan sampah yang tidak terkelola dengan baik telah menyebabkan dampak negatif terhadap
@@ -85,11 +89,11 @@
                 <div class="step">
                     <div class="left">
                         <div class="box">
-                            <img src="/gambar/customer-service.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/950/950237.png" alt="">
                             <h2>Calling</h2>
                         </div>
                         <div class="box">
-                            <img src="/gambar/recycling-truck.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/9212/9212673.png" alt="">
                             <h2>Pengangkutan</h2>
                         </div>
                     </div>
@@ -110,12 +114,12 @@
                     <br><br><br>
                     <div class="right">
                         <div class="box">
-                            <img src="/gambar/trash-can.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1178/1178404.png" alt="">
                             <h2>Research</h2>
                         </div>
 
                         <div class="box">
-                            <img src="/gambar/trash.png" alt="">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3316/3316075.png" alt="">
                             <h2>Calling</h2>
                         </div>
 
@@ -136,11 +140,13 @@
         <div class="blog">
             <div class="head">
                 <h1>Blog</h1>
-                <p>Pembaca diharapkan dapat memperoleh pengetahuan dan kesadaran yang lebih dalam mengenai masalah lingkungan, serta terdorong untuk mengambil tindakan nyata untuk membantu mengurangi dampak permasalahan lingkungan di sekitar mereka.</p>
+                <p>Pembaca diharapkan dapat memperoleh pengetahuan dan kesadaran yang lebih dalam mengenai masalah
+                    lingkungan, serta terdorong untuk mengambil tindakan nyata untuk membantu mengurangi dampak
+                    permasalahan lingkungan di sekitar mereka.</p>
             </div>
             <br><br>
             <div class="related-blog">
-                <img src="/gambar/sec-1.png" alt="">
+                <img src="https://img.freepik.com/free-psd/3d-rendering-isometric-ecologic-concept_23-2149859672.jpg?w=1380&t=st=1681147134~exp=1681147734~hmac=7ef102ff670812e7cb367db14c89827bf2cfc3dab3194b07efb5059a8095f119" alt="">
                 <div class="description">
                     <h4>12 Maret 2023</h4>
                     <h2>Inovasi Pengelolaan Sampah untuk Mengatasi Bencana Alam</h2>
@@ -153,34 +159,96 @@
         <div class="row-flex">
             <div class="blogs">
                 <div class="card">
-                    <img src="/gambar/blog2.png" alt="">
+                    <img src="https://geotimes.id/wp-content/uploads/2015/11/Waktu-Operasional-Truk-Sampah-051115-ris-2.jpg" alt="">
                     <p>Ancaman Lingkungan dari Sampah Tak Terkelola di Indonesia</p>
                 </div>
                 <div class="card">
-                    <img src="/gambar/blog3.png" alt="">
+                    <img src="https://aksaranews.com/wp-content/uploads/2022/06/BF0F758F-772D-4211-BE03-3710C2733D72.jpeg" alt="">
                     <p>Komunitas Bersatu Lawan Pencemaran Lingkungan</p>
                 </div>
                 <div class="card">
-                    <img src="/gambar/blog4.png" alt="">
+                    <img src="https://sampahlaut.id/wp-content/uploads/2022/07/Screen-Shot-2022-07-03-at-21.37.29.png" alt="">
                     <p>Indonesia: Runner-up Produksi Sampah Plastik Dunia</p>
                 </div>
                 <div class="card">
-                    <img src="/gambar/blog5.png" alt="">
+                    <img src="https://asset-a.grid.id//crop/0x0:0x0/700x465/photo/2022/10/09/contoh-interaksi-terhadap-alam-u-20221009081637.jpg" alt="">
                     <p>Pendidikan Lingkungan untuk Mencegah Kerusakan Alam </p>
                 </div>
                 <div class="card">
-                    <img src="/gambar/blog6.png" alt="">
-                    <p>Alfamart Gelar Pelatihan Daur Ulang Sampah, Bungkus Kopi ‘Disulap’ Jadi Tas Cantik</p>
+                    <img src="https://tipa-corp.com/wp-content/uploads/2021/06/Copy-of-Recycling.png" alt="">
+                    <p>Penjelasan Tentang Recycling & Composting</p>
                 </div>
                 <div class="card">
-                    <img src="/gambar/blog7.png" alt="">
+                    <img src="https://cdn-image.hipwee.com/wp-content/uploads/2023/02/hipwee-Fotoram.io_-750x422.jpg" alt="">
                     <p>Kreativitas Anak Muda di Era Digital untuk Lingkungan</p>
                 </div>
             </div>
             <br><br>
-            <a href=""><b>See more</b></a>
+            <a href=""><b>More blog</b></a>
         </div>
     </div>
+
+    <div class="container">
+        <div class="contact-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d78136.99873977112!2d101.43945682768523!3d0.5038022993531094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1681133985810!5m2!1sid!2sid"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact">
+                <h1>Contact</h1>
+                <br>
+                <p>Anda dapat menghubungi kami melalui form yang tersedia di website kami.</p>
+                <br>
+                <form action="">
+                    <input id="name" type="text" placeholder="nama">
+                    <input id="city" type="text" placeholder="Kota">
+                    <input id="email" type="email" placeholder="Kota">
+                    <input id="zip-code" type="number" placeholder="kode pos">
+                    <label for="" id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan
+                        telah
+                        sesuai</label>
+                    <input id="status" type="checkbox">
+                    <button id="submit-form" type="submit">Submit</button>
+                    <div id="warning"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <center> <img src="https://o.remove.bg/downloads/064fdc60-83de-4369-88ff-fd071089ce96/3ds-removebg-preview.png"
+            alt="" id="footer-img"></center>
+
+    <footer>
+        <div class="container-footer">
+            <div class="skilvul">
+                <b>Powered by</b>
+                <a href="https://skilvul.com"><img src="https://skilvul.com/static/skilvul-anniversary.png" alt="Logo"
+                        height="20px"></a>
+            </div>
+            <div class="navbar">
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Blog</a>
+                <a href="">Princing</a>
+                <a href="">Service</a>
+            </div>
+            <div class="media">
+
+                <a href="https://www.instagram.com/ui.figo/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.instagram.com/ui.figo/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ui.figo/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ui.figo/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            
+        </div>
+
+        </div>
+        
+    </footer>
+    <div class="copyrights">
+        <p >copyrights &copy; 2023 FigoFerdyian. All rights reserved</p>
+    </div>
+    
 </body>
 
 </html>
+<script src="main.js"></script>
