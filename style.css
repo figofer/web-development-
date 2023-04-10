@@ -318,7 +318,8 @@ nav ul li a:hover::after {
 }
 
 .mid {
-    background: url(/gambar/border.png);
+   
+    background: url(https://i.ibb.co/fHrcFLS/border.png);
     background-size: cover;
     width: 5px;
     display: flex;
@@ -572,7 +573,7 @@ footer {
 
 .navbar {
 
-    width: 350px;
+    width: 450px;
     display: flex;
     height: 70px;
     font-size: 12pt;
