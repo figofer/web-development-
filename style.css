@@ -537,6 +537,14 @@ button {
     width: 400px;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: white;
+    color: #74aa22;
+    border: 1px solid  #74aa22;
 }
 
 #warning {
